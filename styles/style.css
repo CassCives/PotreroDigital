@@ -1,0 +1,21 @@
+#titulo{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    color: cadetblue;
+}
+#subtitulo{
+    align-self: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+body{
+    background-color: blanchedalmond;
+}
+#imagenTortilla{
+    width:700px;
+    height:400px;
+}
