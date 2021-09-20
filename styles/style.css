@@ -1,3 +1,58 @@
+header{
+    border: black solid 3px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav{
+    border: black solid 3px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ulNav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(173, 153, 122);
+}
+.liNav{
+    display: inline;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+}
+.aNav{
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+main{
+    border: black solid 3px;
+    float: left;
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+}
+aside{
+    text-align: center;
+    border: black solid 3px;
+    float: left;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+}
+footer{
+    text-align: center;
+    border: black solid 3px;
+    clear: both;
+    float: left;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
 #titulo{
     text-align: center;
     text-decoration: underline;
@@ -5,7 +60,7 @@
     color: cadetblue;
 }
 #subtitulo{
-    align-self: center;
+    text-align: center;
     text-decoration: underline;
     font-size: 30px;
 }
@@ -18,4 +73,15 @@ body{
 #imagenTortilla{
     width:700px;
     height:400px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.logoFlotante{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 85%;
+    right: 10%;
 }
