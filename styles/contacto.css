@@ -28,8 +28,7 @@ nav{
     color: black;
     text-align: center;
     text-decoration: none;
-}
-@keyframes aNav{
+}@keyframes aNav{
     from {color: black}
     to {color: white}
 }
@@ -48,15 +47,7 @@ nav{
 main{
     border: black solid 3px;
     float: left;
-    width: 60%;
-    height: 100%;
-    box-sizing: border-box;
-}
-aside{
-    text-align: center;
-    border: black solid 3px;
-    float: left;
-    width: 40%;
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
 }
@@ -86,52 +77,6 @@ p{
 body{
     background-color: blanchedalmond;
 }
-#imagenTortilla{
-    width:700px;
-    height:400px;
-}
-@keyframes imagenTortilla{
-    from {width:700px;
-        height:400px;}
-    to {width:800px;
-        height:500px;}
-}
-#imagenTortilla:hover{
-    animation-name: imagenTortilla;
-    animation-duration: 1s;
-}
-.musica::after{
-    content: "            <------Escuchala mientras lees";
-    color: green;
-}
-@keyframes videoYoutube{
-    from {width:560px;
-        height:315px;}
-    to {width:700px;
-        height:400px;}
-}
-.videoYoutube:hover{
-    animation-name: videoYoutube;
-    animation-duration: 2s;
-}
-@keyframes mapaGoogle{
-    from {width:600px;
-        height:450px;}
-    to {width:700px;
-        height:500px;}
-}
-.mapaGoogle:hover{
-    animation-name: mapaGoogle;
-    animation-duration: 2s;
-}
-@keyframes subtitulo{
-    from {font-size: 30px;}
-    to {font-size: 40px;}
-}
-.subtitulo:hover{
-    animation-name: subtitulo;
-    animation-duration: 2s;
-}
 .logo{
     width: 50px;
     height: 50px;
@@ -142,4 +87,69 @@ body{
     position: fixed;
     top: 85%;
     right: 10%;
+}
+.labelNombre{
+    float: left;
+    width:25%;
+    padding-left: 20%;
+    box-sizing: border-box;
+}
+.inputNombre{
+    border: black solid 3px;
+    float: left;
+    width: 5%;
+    box-sizing: border-box;
+}
+.labelApellido{
+    float: left;
+    width: 25%;
+    padding-left: 20%;
+    box-sizing: border-box;
+}
+.inputApellido{
+    border: black solid 3px;
+    float: left;
+    width: 5%;
+    box-sizing: border-box;
+}
+.labelMail{
+    float: left;
+    width: 25%;
+    padding-left: 20%;
+    box-sizing: border-box;
+}
+.inputMail{
+    border: black solid 3px;
+    float: left;
+    width: 5%;
+    box-sizing: border-box;
+}
+.labelMensaje{
+    float: left;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.inputMensaje{
+    border: black solid 3px;
+    clear: both;
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    align-self: center;
+    box-sizing: border-box;
+}
+.inputSubmit{
+    border: black solid 3px;
+    clear: both;
+    float: left;
+    width: 5%;
+    margin-right: 47.5%;
+    margin-left: 47.5%;
+    text-align: center;
+    align-self: center;
+    box-sizing: border-box;
 }
