@@ -3,20 +3,29 @@
     src: url("../fonts/BRADHITC.TTF")
     format("truetype");
 }
+body{
+    display: flex;
+    flex-flow:  wrap;
+    justify-content: flex-start;
+}
 header{
+    display: flex;
+    flex-flow: column;
     border: black solid 3px;
-    float: left;
-    width: 100%;
+    flex: 100%;
     box-sizing: border-box;
 }
 nav{
+    display: flex;
+    flex-flow: row wrap;
     border: black solid 3px;
-    float: left;
-    width: 100%;
+    flex: 100%;
     box-sizing: border-box;
     font-family: "oswald";
+    background-color: rgb(173, 153, 122);
 }
 .ulNav{
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,13 +33,13 @@ nav{
     background-color: rgb(173, 153, 122);
 }
 .liNav{
-    display: inline;
-    float: left;
+    display: flex;
+    flex-flow: row wrap;
     text-align: center;
     padding: 14px 16px;
 }
 .aNav{
-    display: block;
+    display: flex;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -53,26 +62,20 @@ nav{
 }
 main{
     border: black solid 3px;
-    float: left;
-    width: 60%;
-    height: 100%;
+    flex: 60%;
     box-sizing: border-box;
 }
 aside{
     text-align: center;
     border: black solid 3px;
-    float: left;
-    width: 40%;
-    height: 100%;
+    flex: 40%;
     box-sizing: border-box;
 }
 footer{
     text-align: center;
     border: black solid 3px;
     clear: both;
-    float: left;
-    width: 100%;
-    height: 100%;
+    flex: 100%;
     box-sizing: border-box;
 }
 .titulo{
@@ -94,14 +97,16 @@ body{
     background-color: blanchedalmond;
 }
 #imagenTortilla{
-    width:36.458333333333336vw;
-    height:43.196544276457885vh;
+    margin: auto;
+    display: block;
+    width:28.048780487804876vw;
+    height:28.68970482354212vh;
 }
 @keyframes imagenTortilla{
-    from {width:36.458333333333336vw;
-        height:43.196544276457885vh;}
-    to {width:41.666666666666664vw;
-        height:53.99568034557235vh;}
+    from {width:28.048780487804876vw;
+        height:28.68970482354212vh;}
+    to {width:35.06097560975609vw;
+        height:35.86213102942765vh;}
 }
 #imagenTortilla:hover{
     animation-name: imagenTortilla;
@@ -151,10 +156,82 @@ body{
     width: 2.6041666666666665vw;
     height: 5.399568034557236vh;
 }
+.texto{
+    display: none;
+}
 .logoFlotante{
     width: 2.6041666666666665vw;
     height: 5.399568034557236vh;
     position: fixed;
     top: 85%;
     right: 10%;
+}
+@media (max-width: 575px){
+    #imagenTortilla{
+        width:100.048780487804876vw;
+        height:32.68970482354212vh;
+    }
+    .mapaGoogle{
+        width:100.048780487804876vw;
+        height:48.59611231101512vh;
+    }
+    .videoYoutube{
+        width:100.048780487804876vw;
+        height:34.01727861771058vh;
+    }
+    .logoFlotante{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .texto{
+        display: block;
+    }
+}
+@media (max-width: 768px){
+    #imagenTortilla{
+        width:100.048780487804876vw;
+        height:32.68970482354212vh;
+    }
+    .mapaGoogle{
+        width:100.048780487804876vw;
+        height:48.59611231101512vh;
+    }
+    .videoYoutube{
+        width:100.048780487804876vw;
+        height:34.01727861771058vh;
+    }
+    .logoFlotante{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .texto{
+        display: block;
+    }
+}
+@media (max-width: 991px){
+    #imagenTortilla{
+        width:100.048780487804876vw;
+        height:32.68970482354212vh;
+    }
+    .mapaGoogle{
+        width:100.048780487804876vw;
+        height:48.59611231101512vh;
+    }
+    .videoYoutube{
+        width:100.048780487804876vw;
+        height:34.01727861771058vh;
+    }
+    .logoFlotante{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .texto{
+        display: block;
+    }
 }

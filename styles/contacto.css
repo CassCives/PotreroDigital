@@ -3,20 +3,30 @@
     src: url("../fonts/BRADHITC.TTF")
     format("truetype");
 }
+body{
+    display: flex;
+    flex-flow:  wrap;
+    justify-content: flex-start;
+}
 header{
+    display: flex;
+    flex-flow: column;
     border: black solid 3px;
-    float: left;
-    width: 100%;
+    flex: 100%;
     box-sizing: border-box;
 }
 nav{
+    display: flex;
+    flex-flow: row wrap;
     border: black solid 3px;
-    float: left;
-    width: 100%;
+    flex: 100%;
     box-sizing: border-box;
     font-family: "oswald";
+    background-color: rgb(173, 153, 122);
 }
+
 .ulNav{
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,17 +34,18 @@ nav{
     background-color: rgb(173, 153, 122);
 }
 .liNav{
-    display: inline;
-    float: left;
+    display: flex;
+    flex-flow: row wrap;
     text-align: center;
     padding: 14px 16px;
 }
 .aNav{
-    display: block;
+    display: flex;
     color: black;
     text-align: center;
     text-decoration: none;
-}@keyframes aNav{
+}
+@keyframes aNav{
     from {color: black}
     to {color: white}
 }
@@ -52,18 +63,14 @@ nav{
 }
 main{
     border: black solid 3px;
-    float: left;
-    width: 100%;
-    height: 100%;
+    flex: 60%;
     box-sizing: border-box;
 }
 footer{
     text-align: center;
     border: black solid 3px;
     clear: both;
-    float: left;
-    width: 100%;
-    height: 100%;
+    flex: 100%;
     box-sizing: border-box;
 }
 .titulo{
